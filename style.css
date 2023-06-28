@@ -1,0 +1,398 @@
+@font-face {
+    font-family: 'InterR';
+    src: url(./Inter/Inter-Regular.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'InterR';
+    font-size: 16px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: relative;
+}
+
+.header-wrapper {
+    width: 1300px;
+    margin: 0 auto 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 220px;
+    height: 80px;
+    background: url(./img/logo.png) no-repeat center center;
+    background-size: 60%;
+}
+
+.header-menu {
+    height: fit-content;
+    margin: auto 0 auto 0;
+}
+
+.header-nav {
+    margin-left: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.main-wrapper {
+    width: 1300px;
+    margin: 0 auto 0 auto;
+}
+
+.block-header {
+    font-size: 32px;
+    margin: 30px 0;
+}
+
+.poisk-wrapper {
+    width: 1250px;
+    margin: 0 auto 0 auto;
+}
+
+.main-block {
+    width: 100%;
+    background: url(./img/kol_slide1.jpg) center center no-repeat;
+    background-position-y: -80px;
+    background-color: #000;
+    background-size: 100%;
+}
+
+.slider {
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    position: relative;
+}
+
+.navigation {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.bar {
+    width: 45px;
+    height: 8px;
+    margin: 6px;
+    cursor: pointer;
+    background-color: #fff;
+    opacity: .5;
+    transition: all 0.4s ease;
+}
+
+.bar:hover {
+    background-color: #4b28ff;
+    transform: scale(1.1);
+}
+
+input[name="r"] {
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides {
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+
+.slide {
+    width: 25%;
+    transition: all 0.6s ease;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.img {
+    width: 50%;
+    height: 100%;
+}
+
+#r1:checked~.s1 {
+    margin-left: 0;
+}
+
+#r2:checked~.s1 {
+    margin-left: -25%;
+}
+
+#r3:checked~.s1 {
+    margin-left: -50%;
+}
+
+.sl-ph {
+    width: 100%;
+    background: url(./img/kol_slide1.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.sl1 {
+    background-position-x: 460px;
+}
+
+.sl2 {
+    background-position-x: -460px;
+}
+
+.sl2-ph {
+    width: 730px;
+    height: 600px;
+    background: url(../img/plan-road-trip-tips-ideas.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.sl3-ph {
+    width: 800px;
+    height: 700px;
+    background: url(../img/1534401018-3.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.sl1-left {
+    color: #000;
+    text-align: center;
+    margin: 170px auto auto 50px;
+    background-color: white;
+    border-radius: 10px;
+    width: 520px;
+    height: 300px;
+    padding-top: 80px;
+}
+
+.sl1-right {
+    color: #000;
+    text-align: center;
+    margin: 170px 50px auto auto;
+    background-color: white;
+    border-radius: 10px;
+    width: 520px;
+    height: 300px;
+}
+
+.sl1-header {
+    font-size: 40px;
+    margin-bottom: 8px;
+}
+
+.sl2-header {
+    font-size: 40px;
+    margin-bottom: 8px;
+    width: 450px;
+    text-align: left;
+    margin: 20px auto;
+}
+
+.sl1-disc {
+    color: #777777;
+    margin-bottom: 20px;
+}
+
+.sl2-disc {
+    color: #777777;
+    margin-bottom: 20px;
+    width: 450px;
+    text-align: justify;
+    margin: auto;
+}
+
+
+.slider-inp {
+    width: 366px;
+    height: 58px;
+    background-color: #fff;
+    color: #7e7e7e;
+    border: 0;
+    text-indent: 10px;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    margin-top: 40px;
+}
+
+.slider-next-btn {
+    width: 300px;
+    height: 60px;
+    background-color: #5C3AFE;
+    border: 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.slider-next-btn:hover {
+    background-color: #4b28ff;
+    border: 0;
+}
+
+.sl-price {
+    font-size: 40px;
+    margin-top: 40px;
+}
+
+.main-con-wrapper {
+    width: 1200px;
+    margin: 0 auto 0 auto;
+}
+
+.history {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.his-img {
+    width: 540px;
+    height: 400px;
+    background-color: #000;
+}
+
+.his-img1 {
+    background: url(./img/rim-vid3.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.his-img2 {
+    background: url(./img/rim-vid.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.his-img3 {
+    background: url(./img/rim-vid2.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.his-textr {
+    width: 600px;
+    text-align: justify;
+    margin: auto 0 auto auto;
+}
+
+.his-textl {
+    width: 600px;
+    text-align: justify;
+    margin: auto auto auto 0;
+}
+
+.tour-con {
+    width: 100%;
+    background: url(./img/fon-tour.jpg) no-repeat center center;
+    background-size: cover;
+    height: 460px;
+    padding-top: 100px;
+}
+
+.promo-tour {
+    width: 600px;
+    border-radius: 10px;
+    text-align: center;
+    height: 250px;
+    margin: auto;
+    background-color: #fff;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.main_wrapper {
+    width: 960px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: 30px auto;
+  }
+  
+  footer {
+    background-color: #5C3AFE;
+    height: 300px;
+  }
+  
+  .footer-links {
+    width: 70%;
+    height: 220px;
+    border-right: 1px solid rgb(255, 255, 255);
+    color: #fff;
+    gap: 50px;
+    margin-top: 40px;
+  }
+  
+  .footer-contacts {
+    color: #fff;
+    margin-top: 40px;
+    margin-left: 40px;
+  }
+  
+  .footer-contacts {
+    width: 30%;
+    height: 220px;
+  }
+  
+  .footer-column-name {
+    margin-bottom: 15px;
+  }
+
+  .footer-column-links {
+    font-family: "PT Sans regular";
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-column-links > a {
+    color: #fff;
+  }
+  
+  .footer-email-con {
+    gap: 5px;
+  }
+  
+  .footer-copyright {
+    height: fit-content;
+    margin: 20px auto 0 auto;
+  }
+  
+  .info-link-img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .footer-info-links {
+    gap: 20px;
+    height: 75px;
+  }
+
+  .flex-row {
+    display: flex;
+  }
+
+  .main-footer-wrapper {
+    width: 1200px;
+    margin: 0 auto 0 auto;
+  }
+
+  .font-bolshe {
+    font-size: 24px;
+  }
+
+  .uvazhat {
+    margin-top: 20px;
+    font-size: 20px;
+  }
